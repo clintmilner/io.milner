@@ -62,6 +62,10 @@ header .logo{
     color: #111;
 }
 
+.jumbotron .me {
+    padding-top: 39px;
+}
+
 .parallax{
     height: 311px;
 }
