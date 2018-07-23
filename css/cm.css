@@ -1,0 +1,157 @@
+* {
+    -webkit-transition: all 0.311s ease;
+    -moz-transition:    all 0.311s ease;
+    -ms-transition:     all 0.311s ease;
+    -o-transition:      all 0.311s ease;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+header {
+    background: rgba(289, 218, 73, 0.8);
+    height: 52px;
+    padding: 0 8px;
+    /*color: #2B2B2B;*/
+}
+header .nav-item {
+    width: 4.5em;
+}
+header a.nav-link {
+    color:#2B2B2B;
+    padding: 0 0.5em;
+}
+header a:hover, a:active, header a.active {
+    font-weight: 700;
+    color: #111;
+}
+
+header .logo{
+    display: none;
+}
+
+
+
+
+.jumbotron {
+    color: #fefefe;
+    height: 30rem;
+    background-image: linear-gradient(to right bottom, #efda49 49.8%, #191c1d 50%);
+    padding-top:10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.jumbotron h1 {
+    font-size: 8.5rem;
+    padding-top: .5rem;
+}
+.jumbotron .lead {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+}
+.jumbotron .logo h1 {
+    font-size: 2.8rem;
+    padding-top: .5rem;
+    color: #111;
+}
+
+.parallax{
+    height: 311px;
+}
+.parallax.top {
+    background: url("../img/dev-setup.jpg") 30% center no-repeat fixed;
+}
+.parallax.bottom {
+    background: url("../img/sample-code-md.jpeg") 40% 20% no-repeat fixed;
+}
+
+
+section {
+    color: #fefefe;
+    background: #191C1D;
+}
+
+section aside {
+    /*font-family: 'Pacifico', cursive;*/
+    color:#2B2B2B;
+    /*background: #2B2B2B;*/
+
+
+}
+section aside h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: #fefefe;
+}
+
+
+footer {
+    height: 6rem;
+    background: #E74C53;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    footer { background: black; }
+    header .logo{
+        display: block;
+
+    }
+    header .logo h1 {
+        font-size: 1.9rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 9rem;
+    }
+    .jumbotron .logo {
+        display: none;
+    }
+    .parallax {
+        height: 400px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    footer { background: orange; }
+    header .logo h1{
+        font-size: 2.5rem;
+    }
+    header .nav-item {
+        width: 5em;
+    }
+    .jumbotron h1 {
+        padding-top: 4.5rem;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    footer { background: yellow; }
+
+    header .nav-item {
+        width: 7em;
+    }
+    .jumbotron {
+        height: 30rem;
+        padding-top:10px;
+        text-align: left;
+    }
+    .jumbotron h1 {
+        font-size: 9rem;
+        padding-top: 0;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    footer { background: green; }
+}
