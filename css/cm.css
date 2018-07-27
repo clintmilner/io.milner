@@ -42,10 +42,12 @@ header .logo{
 .jumbotron {
     color: #fefefe;
     height: 30rem;
-    background-image: linear-gradient(to right bottom, #efda49 49.8%, #191c1d 50%);
+    /*background-image: linear-gradient(to right bottom, #efda49 49.8%, #191c1d 50%);*/
+    background-image: linear-gradient(to right bottom, #efda49 49.8%, black 50%);
     padding-top:10px;
     text-align: center;
     margin-bottom: 0;
+    mix-blend-mode: lighten;
 }
 .jumbotron h1 {
     font-size: 8.5rem;
@@ -67,13 +69,47 @@ header .logo{
 }
 
 .parallax{
-    height: 311px;
+    height: 175px;
 }
 .parallax.top {
-    background: url("../img/dev-setup.jpg") 30% center no-repeat fixed;
+    /*background: url("../img/dev-setup.jpg") 30% center no-repeat fixed;*/
 }
 .parallax.bottom {
     background: url("../img/sample-code-md.jpeg") 40% 20% no-repeat fixed;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: -50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../video/golden.png') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
 }
 
 
@@ -118,9 +154,9 @@ footer {
     .jumbotron .logo {
         display: none;
     }
-    .parallax {
-        height: 400px;
-    }
+    /*.parallax {*/
+        /*height: 400px;*/
+    /*}*/
 }
 
 /*Medium devices (tablets, 768px and up)*/
