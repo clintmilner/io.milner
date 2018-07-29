@@ -13,6 +13,13 @@
     <title>Clint Milner - Web Developer</title>
 </head>
 <body>
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="https://res.cloudinary.com/milnerio/image/upload/v1532895259/golden.png" class="fullscreen-bg__video">
+        <source src="https://res.cloudinary.com/milnerio/video/upload/v1532895260/golden.webm" type="video/webm">
+        <source src="https://res.cloudinary.com/milnerio/video/upload/v1532895260/golden.mp4" type="video/mp4">
+        <source src="https://res.cloudinary.com/milnerio/video/upload/v1532895260/golden.ogv" type="video/ogg">
+    </video>
+</div>
 <div class="container-fluid">
     <header class="sticky-top row align-items-center justify-content-center shadow-sm">
         <div class="col">
@@ -41,13 +48,7 @@
             </div>
         </div>
     </header>
-    <div class="fullscreen-bg">
-        <video loop muted autoplay poster="video/golden.png" class="fullscreen-bg__video">
-            <source src="video/golden.webm" type="video/webm">
-            <source src="video/golden.mp4" type="video/mp4">
-            <source src="video/golden.ogv" type="video/ogg">
-        </video>
-    </div>
+
     <div class="jumbotron jumbotron-fluid row">
         <div class="container">
             <div class="text-center logo">
@@ -58,64 +59,34 @@
             <!--<div class="me"><img src="img/me.png" /></div>-->
         </div>
     </div>
-    <div class="row parallax top"></div>
-    <div class="row content">
-        <div class="col-xl-12">
-            <section class="row">
-                <aside class="col-md-3">
-                    <h3>Work</h3>
-                    <div class="card">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Rebasoft</li>
-                            <li class="list-group-item">Craftsy</li>
-                            <li class="list-group-item">BT Fresca</li>
-                            <li class="list-group-item">Alpha Duplication Ltd</li>
-                        </ul>
-                    </div>
-                </aside>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Rebasoft Ltd.</h2>
-                            <h3>Tywford, UK</h3>
-                            <h4>Head of Software Development 2015-Present</h4>
-                            <p>Responsibilities</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="https://placebear.com/420/320?image=2" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="https://placebear.com/420/320?image=1" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="https://placebear.com/420/320?image=3" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+    <section class="row details">
+        <div class="col-sm-3">
+            <img class="headshot" src="https://res.cloudinary.com/milnerio/image/upload/me.jpg" width="100%" alt="Clint Milner" />
         </div>
-    </div>
-    <div class="row parallax bottom"></div>
-    <footer class="row">
-        Copyright &copy; ClintMilner.com
+        <div class="col-sm-9">
+            <h2>About Me</h2>
+            <p>I am a US born, UK based Web Developer specializing in building Front End functionality to web sites and applications. I have worked in this field since 2008 and built web sites for light, medium, and heavy traffic sites, as well as greenfield software solutions.</p>
+            <p>My past experience has included working on small teams that have grown into large ones, as well as working independently on employer projects and freelance client work.</p>
+            <p>Currently I am the Head of Software Development managing a small team of software developers building products in the Network Security space. I am 100% hands-on, and am responsible for 100% of the Front End code.</p>
+            <p></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row no-gutters">
+            <div class="col-sm-6">&copy; ClintMilner.com / Milner.io</div>
+            <nav class="col-sm-6">
+                <ul class="pull-right">
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+
+        </div>
     </footer>
+
 </div>
 
 <!-- https://2018.clintmilner.com/ -->
@@ -123,6 +94,7 @@
 
 <script src="js/jquery/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
 <script src="js/underscore/_bundle.js"></script>
 <script src="js/cm.js"></script>
 <script> Events.init(); </script>

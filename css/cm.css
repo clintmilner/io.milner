@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    background: #414141;
 }
 
 h1 {
@@ -48,6 +49,7 @@ header .logo{
     text-align: center;
     margin-bottom: 0;
     mix-blend-mode: lighten;
+    transform: translateZ(0);
 }
 .jumbotron h1 {
     font-size: 8.5rem;
@@ -80,7 +82,7 @@ header .logo{
 
 .fullscreen-bg {
     position: fixed;
-    top: -50px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -90,7 +92,7 @@ header .logo{
 
 .fullscreen-bg__video {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     width: auto;
     height: auto;
@@ -116,30 +118,45 @@ header .logo{
 section {
     color: #fefefe;
     background: #191C1D;
+    padding: 1.5em 0;
+    border-top: 1px solid #efda49;
+    /*border-bottom: 1px solid #efda49;*/
+    border-bottom: 1px solid #636363;
 }
 
-section aside {
-    /*font-family: 'Pacifico', cursive;*/
-    color:#2B2B2B;
+section h2 {
+    font-family: 'Permanent Marker', cursive;
+    color:#fefefe;
     /*background: #2B2B2B;*/
 
 
 }
-section aside h3 {
-    font-family: 'Permanent Marker', cursive;
+section .headshot {
     text-align: center;
-    color: #fefefe;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 
 footer {
-    height: 6rem;
-    background: #E74C53;
+    height: 3em;
+    color: #818181;
+    background: #414141;
+    padding: 0 2.5em;
+}
+
+footer nav ul li {
+    display: inline-block;
+    width: 1.2em;
+    list-style: none;
+    font-size: larger;
+    float: right;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    footer { background: black; }
+    /*footer { background: black; }*/
     header .logo{
         display: block;
 
@@ -161,7 +178,7 @@ footer {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    footer { background: orange; }
+    /*footer { background: orange; }*/
     header .logo h1{
         font-size: 2.5rem;
     }
@@ -175,7 +192,7 @@ footer {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    footer { background: yellow; }
+    /*footer { background: yellow; }*/
 
     header .nav-item {
         width: 7em;
@@ -193,5 +210,5 @@ footer {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    footer { background: green; }
+    /*footer { background: green; }*/
 }
