@@ -86,7 +86,7 @@ export default () => {
                         <p>Ideas &amp; concepts were first sketched on paper, but most of the designing took place in the browser; experimenting with ideas, colors, and imagery. Once HTML and CSS was written, I transferred assets to an installation of <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> . HTML was converted to <a href='https://reactjs.org/'>React.js</a> components, and CSS was optimized with <a href='https://sass-lang.com/'>Sass</a>.</p>
                         <p>Gatsby transpiles &amp; converts all the React Components, ES6/ES7, and Sass into <strong>static</strong> assets which are then deployed to a server.</p>
                         <p>Media assets are being served by <a href='https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/haec30sllfywfdtxculk'>Cloudinary.com</a> which offer a great on-the-fly optimization service for images and video.</p>
-                        <p>The site is hosted at <a href='https://www.netlify.com'>Netlify.com</a> which has Continious Integration built in every time code is committed.</p>
+                        <p>The site is hosted at <a href='https://www.netlify.com'>Netlify.com</a> which has Continuous Integration built in every time code is committed.</p>
                     </div>
                     <div className='col-sm-3' id='contact'>
                         <h2>Contact</h2>
