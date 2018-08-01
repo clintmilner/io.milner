@@ -1,0 +1,16 @@
+{
+  "name": "milner.io",
+  "description": "2018 Milner.io / ClintMilner.com Redesign",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "gatsby": "1.9.277",
+    "gatsby-link": "1.6.46",
+    "gatsby-plugin-sass": "1.0.26"
+  }
+}

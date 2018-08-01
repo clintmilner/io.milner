@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:300,900');
+@import '_variables';
+
+@font-face {
+    font-family: $headline-text;
+    src: url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+}
+
+@font-face {
+    font-family: $body-text;
+    src: url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900');
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2, .lead {
+    color: $text-light;
+    font-family: $headline-text;
+}
+
+p {
+    color: $text-grey;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+a {
+    color: $brand-yellow-opacity;
+
+    &:hover {
+        color: $brand-yellow;
+        text-decoration: underline;
+    }
+}
+
+.badge {
+    font-weight: 300;
+    line-height: 20px;
+    color: $brand-yellow;
+    text-decoration: none;
+}
