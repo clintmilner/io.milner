@@ -73,7 +73,7 @@ export default () => {
                             well as working independently on employer projects and freelance client work.</p>
                         <p>Currently I am the Head of Software Development managing a small team of software developers
                             building products in the Network Security space. I am 100% hands-on, and am responsible for
-                            100% of the Front End code, but also have responsibilites in both the Full Stack, and Management worlds.</p>
+                            100% of the Front End code, but also have responsibilities in both the Full Stack, and Management worlds.</p>
                         <p></p>
                     </div>
                 </section>
