@@ -75,6 +75,7 @@ body {
 		display: block;
 	    }
 	    h1 {
+		font-size: 1.9rem;
 		@media (min-width: 768px) {
 		    font-size: 2.5rem;
 		}
@@ -89,8 +90,8 @@ body {
 	padding-top: 10px;
 	text-align: center;
 	margin-bottom: 0;
-	mix-blend-mode: lighten;
 	transform: translateZ(0);
+	mix-blend-mode: lighten;
 	@media (min-width: 768px) {
 	    padding-top: 4.5rem;
 	}
@@ -101,11 +102,11 @@ body {
 	}
 
 	h1 {
-	    font-size: 8.5rem;
+	    font-size: 6rem;
 	    padding-top: .5rem;
-	    @media (min-width: 992px) {
+	    @media (min-width: 576px) {
 		font-size: 9rem;
-		padding-top: 0;
+		padding-top: 1.5rem;
 	    }
 	}
 
@@ -122,7 +123,7 @@ body {
 	    h1 {
 		font-size: 2.8rem;
 		padding-top: .5rem;
-		color: $text-dark;
+		color: #fff;
 		@media (min-width: 576px) {
 		    font-size: 1.9rem;
 		}
@@ -132,15 +133,21 @@ body {
 
     .paralax {
 	height: 311px;
-	background: url('http://res.cloudinary.com/milnerio/image/upload/q_auto,c_scale,e_art:zorro,w_2428/v1532895246/sample-code.jpg') 50% 50% fixed;
+	background: url('http://res.cloudinary.com/milnerio/image/upload/q_auto,c_scale,e_art:zorro,w_1000/v1532895246/sample-code.jpg') 20% 20% fixed;
+
+	@media (min-width: 768px) {
+	    background: url('http://res.cloudinary.com/milnerio/image/upload/q_auto,c_scale,e_art:zorro,w_2428/v1532895246/sample-code.jpg') 50% 50% fixed;
+	}
     }
 
     section {
 	color: $text-light;
 	background: $bg-black;
+    	background: radial-gradient(circle, rgba(55,62,64,1) 0%, rgba(25,28,29,1) 100%);
 	padding: 1.5em 0;
 	border-top: 1px solid $brand-yellow;
 	border-bottom: 1px solid $brand-yellow;
+	transform: translateZ(0);
 
 	h2 {
 	    color: $text-light;
@@ -160,16 +167,8 @@ body {
 	background: $bg-dark;
 	padding: 0 2.5em;
 
-	nav {
-	    ul {
-		li {
-		    display: inline-block;
-		    width: 1.2em;
-		    list-style: none;
-		    font-size: larger;
-		    float: right;
-		}
-	    }
+	.contact-type{
+	    display: none;
 	}
     }
 }
