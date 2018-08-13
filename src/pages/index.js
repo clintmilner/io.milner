@@ -61,7 +61,7 @@ export default () => {
 
                 <section id='about' className="row details">
                     <div className="col-sm-3">
-                        <img className="headshot" src="http://res.cloudinary.com/milnerio/image/upload/e_art:audrey,q_auto:good/v1532895215/me.jpg"
+                        <img className="headshot" src="https://res.cloudinary.com/milnerio/image/upload/e_art:audrey,q_auto:good/v1532895215/me.jpg"
                              width="100%" alt="Clint Milner"/>
                     </div>
                     <div className="col-sm-9">
