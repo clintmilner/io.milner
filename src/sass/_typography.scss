@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:300,900');
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
 @import '_variables';
 
 @font-face {
@@ -11,7 +12,15 @@
     src: url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900');
 }
 
-h1 {
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    font-family: $body-text;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+h1, .me {
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -19,6 +28,8 @@ h1 {
 h2, .lead {
     color: $text-light;
     font-family: $headline-text;
+    font-size: 2.3rem;
+    line-height: 1.2rem;
 }
 
 p {
@@ -29,17 +40,11 @@ p {
 }
 
 a {
+    font-family: $body-text;
     color: $brand-yellow-opacity;
 
     &:hover {
-        color: $brand-yellow;
-        text-decoration: underline;
+	color: $brand-yellow;
+	text-decoration: underline;
     }
-}
-
-.badge {
-    font-weight: 300;
-    line-height: 20px;
-    color: $brand-yellow;
-    text-decoration: none;
 }
