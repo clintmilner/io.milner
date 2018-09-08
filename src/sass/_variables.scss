@@ -2,7 +2,7 @@
 $transition: all 0.311s ease;
 
 $brand-yellow: #efda49;
-$brand-yellow-opacity: #efda49cc;
+$brand-yellow-opacity: unquote('#efda49cc');
 $text-black: #2b2b2b;
 $text-grey: #cbc3c3;
 $text-dark: #111;

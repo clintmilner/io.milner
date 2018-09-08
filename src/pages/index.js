@@ -11,14 +11,14 @@ export default () => {
                     <span className="close">×</span>
                     Menu
                 </button>
-                <ul id="menu-list">
+                <ul>
                     <li>
                         <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
                     </li>
-                    <li>
+                    <li className='logo'>
                         <h1>&lt;CM /&gt;</h1>
                     </li>
                     <li>

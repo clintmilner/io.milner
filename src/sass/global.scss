@@ -55,7 +55,6 @@ body {
 	padding: 10px;
 	text-align: center;
 	color: var(--black);
-	//text-transform: uppercase;
 	font-size: 16px;
 
 	&:hover {
@@ -81,7 +80,6 @@ body {
 	h1 {
 	    font-size: 9rem;
 	    margin: 85px 0 0 0;
-	    //margin: 70px 0 0 0;
 	    color: $text-light;
 	    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	}
@@ -170,5 +168,148 @@ body {
 footer {
     p {
 	text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+	//background: #a55351;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu {
+	//background: #6dd24f;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+	//background: #676597;
+	ul {
+	    grid-template-columns: repeat(5, 1fr);
+	    grid-gap: 10px;
+	    .logo {
+		order: -1;
+		align-self: center;
+		h1 {
+		    font-size: 1.2rem;
+		}
+	    }
+	}
+    }
+    .top {
+	grid-gap: 10px;
+	grid-template-columns: 0.25fr 3fr 0.25fr;
+
+	.hero {
+	    grid-column: 2 / 3;
+
+	    h1 {
+		font-size: 8rem;
+		margin-top: 100px;
+	    }
+	    .lead {
+		margin: 0 0 100px 0;
+	    }
+
+	}
+    }
+
+    .about {
+	grid-template-columns: 0.25fr 3fr 0.25fr;
+
+	.img {
+	}
+	.about__details {
+	    order: -1;
+	    grid-column: 2 / 3;
+	}
+    }
+
+    .site {
+	grid-template-columns: 0.25fr 3fr 0.25fr;
+
+	.site__details {
+	    grid-column: 2 / 3;
+	}
+	.site__contact {
+	    grid-column: 2 / 3;
+
+	    a {
+		font-size: 1rem;
+	    }
+	}
+    }
+}
+
+@media (max-width: 320px) {
+    .menu {
+	ul {
+	    grid-template-columns: 1.5fr repeat(4, 1fr);
+	    grid-gap: 0;
+	    .logo {
+		order: -1;
+		align-self: center;
+		h1 {
+		    font-size: 1rem;
+		    margin-left: 5px;
+		}
+	    }
+	    a {
+		font-size: 0.8rem;
+	    }
+	}
+    }
+    .top {
+	.hero {
+	    h1 {
+		font-size: 4rem;
+	    }
+	    .lead {
+		line-height: 1.6rem;
+	    }
+	}
+
+    }
+    .about {
+	grid-template-columns: 0.1fr 3fr 0.1fr;
+    }
+    .parallax {
+	grid-template-columns: 0.1fr 3fr 0.1fr;
+	grid-template-rows: 0.1fr repeat(2, 1fr) 0.1fr;
+	&.quote {
+	    h1 {
+		font-size: 2rem;
+		grid-row: 2 / 3;
+		text-align: center;
+	    }
+	    .me {
+		font-size: 2rem;
+		grid-column: 5 / -1;
+		grid-row: 4 / 5;
+	    }
+	}
+    }
+    .site {
+	grid-template-columns: 0.1fr 3fr 0.1fr;
+
+	.site__details {
+	    h2 {
+		line-height: 2.2rem;
+	    }
+	}
+	.site__contact {
+	    p {
+		line-height: 1rem;
+	    }
+	    i.fa-fw {
+		font-size: 1rem;
+		margin-right: 0.5rem;
+	    }
+	    a {
+		font-size: 0.8rem;
+	    }
+	}
     }
 }
