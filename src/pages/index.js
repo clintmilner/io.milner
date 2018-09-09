@@ -33,7 +33,7 @@ export default () => {
             </div>
 
             <section className='about' id='about'>
-                <img src='https://res.cloudinary.com/milnerio/image/upload/e_art:audrey,q_auto:good/v1532895215/me.jpg'
+                <img src='https://res.cloudinary.com/milnerio/image/upload/c_scale,w_700/e_art:audrey,q_auto:good/v1532895215/me.jpg'
                      alt='Clint Milner - Web Developer'/>
                 <div className='about__details'>
                     <h2>About Me</h2>
@@ -49,10 +49,14 @@ export default () => {
                 </div>
             </section>
 
-            <div className='parallax quote'>
+            <section className='parallax quote'>
                 <h1>"Learning is a Sisyphean Exercise."</h1>
                 <p className="me">- Me</p>
-            </div>
+            </section>
+
+            <section className='work-history'>
+
+            </section>
 
             <section className='site' id='about-site'>
                 <div className='site__details'>
