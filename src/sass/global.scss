@@ -69,7 +69,7 @@
                 grid-template-columns: 0.25fr 3fr 0.25fr;
                 transform: translateZ(0);
                 mix-blend-mode: lighten;
-                background-image: linear-gradient(to right bottom, #efda49 49.9%, #000 50.1%);
+                background-image: linear-gradient(to right bottom, $brand-yellow 49.9%, #000 50.1%);
                 .hero {
                     grid-column-start: 2;
                     h1 {

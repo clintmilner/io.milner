@@ -6,3 +6,24 @@
     -ms-transition: $transition;
     -o-transition: $transition;
 }
+
+@-webkit-keyframes fancypants {
+    from {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+    to {
+        background-position-x: 350px;
+        background-position-y: 350px;
+    }
+}
+
+body {
+    @media (min-width: 1025px) {
+        /* I'm only doing this on big screen because it seems like it kills the CPU */
+        -webkit-animation: fancypants;-o-animation: fancypants;animation: fancypants;
+        -webkit-animation-duration: 30s;-moz-animation-duration: 30s;-o-animation-duration: 30s;animation-duration: 30s;
+        -webkit-animation-timing-function: linear;-moz-animation-timing-function: linear;-o-animation-timing-function: linear;animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;-moz-animation-iteration-count: infinite;-o-animation-iteration-count: infinite;animation-iteration-count: infinite;
+    }
+}
