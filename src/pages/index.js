@@ -4,13 +4,8 @@ import '../sass/global.scss';
 
 export default () => {
     return (
-        <div className="wrapper">
+        <div className="wrapper fancypants">
             <nav className="menu">
-                <button aria-expanded="false" aria-controls="menu-list">
-                    <span className="open">☰</span>
-                    <span className="close">×</span>
-                    Menu
-                </button>
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -22,17 +17,18 @@ export default () => {
                         <h1>&lt;CM /&gt;</h1>
                     </li>
                     <li>
-                        <a href="#about-site">Work</a>
+                        <a href="#about-site">Site</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
+
             <div className="top">
                 <header className="hero">
-                    <h1>Hello.</h1>
-                    <p className="lead">I'm Clint Milner. Web Developer.</p>
+                    <h1>Hello</h1>
+                    <p className="lead">I'm Clint Milner. <br className='break-me'/> Web Developer.</p>
                 </header>
             </div>
 
@@ -46,7 +42,7 @@ export default () => {
                         light, medium, and heavy traffic sites, as well as greenfield software solutions.</p>
                     <p>My past experience has included working on small teams that have grown into large ones, as
                         well as working independently on employer projects and freelance client work.</p>
-                    <p>Currently I am the Head of Software Development managing a small team of software developers
+                    <p>Currently, I am the Head of Software Development managing a small team of software developers
                         building products in the Network Security space. I am 100% hands-on, and am responsible for
                         100% of the Front End code, but also have responsibilities in both the Full Stack, and
                         Management worlds.</p>
@@ -79,18 +75,26 @@ export default () => {
                     <div className='contact__methods'>
                         <p>
                             <i className="fab fa-fw fa-github"></i>
-                            <a href="https://github.com/clintmilner">https://github.com/clintmilner</a>
+                            <a className='brackets' href="https://github.com/clintmilner">github.com/clintmilner</a>
                         </p>
                         <p>
                             <i className="fab fa-fw fa-twitter"></i>
-                            <a href="https://twitter.com/clint_milner">https://twitter.com/clint_milner</a></p>
+                            <a className='brackets' href="https://twitter.com/clint_milner">twitter.com/clint_milner</a>
+                        </p>
+                        <p>
+                            <i className="fab fa-fw fa-spotify"></i>
+                            <a className='brackets'
+                               href="https://open.spotify.com/user/gatebasher_311">spotify.com/gatebasher_311</a>
+                        </p>
+
                         <p>
                             <i className="far fa-fw fa-envelope"></i>
-                            <a href="mailto:me@clintmilner.com">me@clintmilner.com</a>
+                            <a className='brackets' href="mailto:me@clintmilner.com">me@clintmilner.com</a>
                         </p>
                     </div>
                 </div>
             </section>
+
             <footer>
                 <p>&copy; ClintMilner.com / Milner.io</p>
             </footer>

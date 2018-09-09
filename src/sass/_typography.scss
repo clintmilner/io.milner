@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:300,900');
 @import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
 @import '_variables';
+@import "_mixins";
 
 @font-face {
     font-family: $headline-text;
@@ -9,7 +10,7 @@
 
 @font-face {
     font-family: $body-text;
-    src: url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900');
+    src: url('https://fonts.googleapis.com/css?family=Raleway:300');
 }
 
 html {
@@ -42,9 +43,13 @@ p {
 a {
     font-family: $body-text;
     color: $brand-yellow-opacity;
+    text-decoration: none;
+    position: relative;
 
     &:hover {
-	color: $brand-yellow;
-	text-decoration: underline;
+        color: $brand-yellow;
+        &.brackets {
+            @include brackets();
+        }
     }
 }

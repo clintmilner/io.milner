@@ -1,0 +1,16 @@
+@mixin brackets($fontSize: 1.5em, $x: -6px, $y: -7px) {
+    &::before {
+        font-size: $fontSize;
+        content: '{';
+        position: absolute;
+        top: $x;
+        left: $y;
+    }
+    &::after {
+        font-size: $fontSize;
+        content: '}';
+        position: absolute;
+        top: $x;
+        right: $y;
+    }
+}

@@ -1,0 +1,8 @@
+@import '_variables';
+
+* {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
