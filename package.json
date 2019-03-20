@@ -2,6 +2,9 @@
   "name": "milner.io",
   "description": "2018 Milner.io / ClintMilner.com Redesign",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/clintmilner/io.milner"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
