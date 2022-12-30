@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "bootstrap": "4.3.1",
-    "gatsby": "1.9.277",
+    "gatsby": "5.3.3",
     "gatsby-link": "1.6.46",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-sass": "1.0.26"
